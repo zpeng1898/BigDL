@@ -62,8 +62,8 @@ The original dataset includes 46 million users and 340 million tweets (items). H
 ```
 cd apps/wide-deep-recommendation
 mkdir recsys_data
-python generate_dummy_data.py --output_path recsys_data/ --num_samples 100000
-cd ..
+python generate_dummy_data.py 100000 recsys_data/
+cd ../..
 ```
 
 ---
@@ -153,15 +153,15 @@ python python/friesian/example/wnd/recsys2021/wnd_preprocess_recsys.py \
     --executor_cores 8 \
     --executor_memory 10g \
     --train_files 0-1 \
-    --input_train_folder apps/recsys_data/train \
-    --input_test_folder apps/recsys_data/test \
-    --output_folder apps/recsys_data/preprocessed \
+    --input_train_folder apps/wide-deep-recommendation/recsys_data/train \
+    --input_test_folder apps/wide-deep-recommendation/recsys_data/test \
+    --output_folder apps/wide-deep-recommendation/recsys_data/preprocessed \
     --cross_sizes 600
 
 python python/friesian/example/wnd/recsys2021/wnd_train_recsys.py \
     --executor_cores 8 \
     --executor_memory 10g \
-    --data_dir apps/recsys_data/preprocessed \
+    --data_dir apps/wide-deep-recommendation/recsys_data/preprocessed \
     --model_dir recsys_wnd/ \
     --batch_size 3200 \
     --epoch 10 \
@@ -172,14 +172,14 @@ cd python/friesian/example/two_tower
 python train_2tower.py \
     --executor_cores 8 \
     --executor_memory 10g \
-    --data_dir apps/recsys_data/preprocessed \
+    --data_dir apps/wide-deep-recommendation/recsys_data/preprocessed \
     --model_dir recsys_2tower/
 ```
 
 ## Expected Output
 Check out the processed data and saved models of the workflow:
 ```
-ll apps/recsys_data/preprocessed
+ll apps/wide-deep-recommendation/recsys_data/preprocessed
 ll recsys_wnd/
 ll recsys_2tower/
 ```
