@@ -184,13 +184,40 @@ ll recsys_wnd/
 ll recsys_2tower/
 ```
 Check out the logs of the console for training results:
+`wnd_train_recsys.py`:
 ```
-76/79 [===========================>..] - ETA: 0s - loss: 0.4995 - binary_accuracy: 0.7749 - binary_crossentropy: 0.4995 - auc: 0.6873
-77/79 [============================>.] - ETA: 0s - loss: 0.4995 - binary_accuracy: 0.7749 - binary_crossentropy: 0.4995 - auc: 0.6874
-79/79 [==============================] - ETA: 0s - loss: 0.4993 - binary_accuracy: 0.7750 - binary_crossentropy: 0.4993 - auc: 0.6875
-79/79 [==============================] - 6s 81ms/step - loss: 0.4993 - binary_accuracy: 0.7750 - binary_crossentropy: 0.4993 - auc: 0.6875 - val_loss: 0.5382 - val_binary_accuracy: 0.7730 - val_binary_crossentropy: 0.5382 - val_auc: 0.6826
-Training time is:  26.327171802520752
-Stopping orca context
+(Worker pid=6320) Epoch 1/10                                                                                                                                           
+1/2 [==============>...............] - ETA: 5s - loss: 0.8395 - binary_accuracy: 0.4750 - binary_crossentropy: 0.8395 - auc: 0.5099 - precision: 0.9467 - recall: 0.4705          
+2/2 [==============================] - ETA: 0s - loss: 0.8179 - binary_accuracy: 0.4819 - binary_crossentropy: 0.8179 - auc: 0.5066 - precision: 0.9512 - recall: 0.4785          
+2/2 [==============================] - 7s 2s/step - loss: 0.8179 - binary_accuracy: 0.4819 - binary_crossentropy: 0.8179 - auc: 0.5066 - precision: 0.9512 - recall: 0.4785 - val_loss: 0.7512 - val_binary_accuracy: 0.1035 - val_binary_crossentropy: 0.7512 - val_auc: 0.5066 - val_precision: 0.9354 - val_recall: 0.0443               
+(Worker pid=6320) Epoch 2/10                                                                                                                                            
+1/2 [==============>...............] - ETA: 0s - loss: 0.7543 - binary_accuracy: 0.5034 - binary_crossentropy: 0.7543 - auc: 0.5285 - precision: 0.9493 - recall: 0.5015          
+2/2 [==============================] - ETA: 0s - loss: 0.7404 - binary_accuracy: 0.5178 - binary_crossentropy: 0.7404 - auc: 0.5316 - precision: 0.9507 - recall: 0.5168          
+2/2 [==============================] - 1s 810ms/step - loss: 0.7404 - binary_accuracy: 0.5178 - binary_crossentropy: 0.7404 - auc: 0.5316 - precision: 0.9507 - recall: 0.5168 - val_loss: 0.7482 - val_binary_accuracy: 0.1143 - val_binary_crossentropy: 0.7482 - val_auc: 0.5052 - val_precision: 0.9395 - val_recall: 0.0564                                    
+(Worker pid=6320) Epoch 3/10                                                                                                                                                      
+1/2 [==============>...............] - ETA: 0s - loss: 0.6966 - binary_accuracy: 0.5522 - binary_crossentropy: 0.6966 - auc: 0.5398 - precision: 0.9503 - recall: 0.5557          
+2/2 [==============================] - ETA: 0s - loss: 0.6839 - binary_accuracy: 0.5706 - binary_crossentropy: 0.6839 - auc: 0.5545 - precision: 0.9509 - recall: 0.5743          
+2/2 [==============================] - 1s 716ms/step - loss: 0.6839 - binary_accuracy: 0.5706 - binary_crossentropy: 0.6839 - auc: 0.5545 - precision: 0.9509 - recall: 0.5743 - val_loss: 0.7437 - val_binary_accuracy: 0.1323 - val_binary_crossentropy: 0.7437 - val_auc: 0.5028 - val_precision: 0.9399 - val_recall: 0.0770                                    
+(Worker pid=6320) Epoch 4/10                                                                                                                                                      
+1/2 [==============>...............] - ETA: 0s - loss: 0.6503 - binary_accuracy: 0.6084 - binary_crossentropy: 0.6503 - auc: 0.5907 - precision: 0.9583 - recall: 0.6138          
+2/2 [==============================] - ETA: 0s - loss: 0.6404 - binary_accuracy: 0.6261 - binary_crossentropy: 0.6404 - auc: 0.6136 - precision: 0.9606 - recall: 0.6312          
+Training time is:  19.877293586730957                                                                                                                                             
+2/2 [==============================] - 1s 701ms/step - loss: 0.6404 - binary_accuracy: 0.6261 - binary_crossentropy: 0.6404 - auc: 0.6136 - precision: 0.9606 - recall: 0.6312 - val_loss: 0.7376 - val_binary_accuracy: 0.1581 - val_binary_crossentropy: 0.7376 - val_auc: 0.5028 - val_precision: 0.9416 - val_recall: 0.1062                                    
+(Worker pid=6320) Epoch 4: early stopping                                                                                                                               
+Stopping orca context  
+```
+`train_2tower.py`:
+```
+1/1 [==============================] - ETA: 0s - loss: 1.1471 - binary_accuracy: 0.0554 - recall: 0.0000e+00 - auc: 0.5226                                                        
+1/1 [==============================] - 8s 8s/step - loss: 1.1471 - binary_accuracy: 0.0554 - recall: 0.0000e+00 - auc: 0.5226 - val_loss: 0.3244 - val_binary_accuracy: 0.9345 - val_recall: 1.0000 - val_auc: 0.4965  
+==================================================================================================                                                                                
+Total params: 1,368,528                                                                                                                                                           
+Trainable params: 1,368,528                                                                                                                                                       
+Non-trainable params: 0                                                                                                                                                           
+__________________________________________________________________________________________________                                                                                
+None                                                                                                                                                                              
+saved models                                                                                                                                                                      
+Stopping orca context 
 ```
 
 ## Summary and Next Steps
