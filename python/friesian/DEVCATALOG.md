@@ -184,6 +184,7 @@ ll recsys_wnd/
 ll recsys_2tower/
 ```
 Check out the logs of the console for training results:
+
 `wnd_train_recsys.py`:
 ```
 (Worker pid=6320) Epoch 1/10                                                                                                                                           
