@@ -57,11 +57,12 @@ git checkout ai-workflow
 
 This workflow uses the [Twitter Recsys Challenge 2021 dataset](http://www.recsyschallenge.com/2021/), each record of which contains the tweet along with engagement features, user features, and tweet features.
 
-The original dataset includes 46 million users and 340 million tweets (items). Here in this workflow, we provide a script to generate some dummy data for this dataset.
+The original dataset includes 46 million users and 340 million tweets (items). Here in this workflow, we provide a script to generate some dummy data for this dataset. In the running command below, you can specify the number of records to generate and the output folder respectively.
 
 ```
 cd apps/wide-deep-recommendation
 mkdir recsys_data
+# You can modify the number of records and the output folder when running the script
 python generate_dummy_data.py 100000 recsys_data/
 cd ../..
 ```
