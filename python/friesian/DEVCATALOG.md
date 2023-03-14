@@ -187,38 +187,57 @@ Check out the logs of the console for training results:
 
 `wnd_train_recsys.py`:
 ```
-(Worker pid=6320) Epoch 1/10                                                                                                                                           
-1/2 [==============>...............] - ETA: 5s - loss: 0.8395 - binary_accuracy: 0.4750 - binary_crossentropy: 0.8395 - auc: 0.5099 - precision: 0.9467 - recall: 0.4705          
-2/2 [==============================] - ETA: 0s - loss: 0.8179 - binary_accuracy: 0.4819 - binary_crossentropy: 0.8179 - auc: 0.5066 - precision: 0.9512 - recall: 0.4785          
-2/2 [==============================] - 7s 2s/step - loss: 0.8179 - binary_accuracy: 0.4819 - binary_crossentropy: 0.8179 - auc: 0.5066 - precision: 0.9512 - recall: 0.4785 - val_loss: 0.7512 - val_binary_accuracy: 0.1035 - val_binary_crossentropy: 0.7512 - val_auc: 0.5066 - val_precision: 0.9354 - val_recall: 0.0443               
-(Worker pid=6320) Epoch 2/10                                                                                                                                            
-1/2 [==============>...............] - ETA: 0s - loss: 0.7543 - binary_accuracy: 0.5034 - binary_crossentropy: 0.7543 - auc: 0.5285 - precision: 0.9493 - recall: 0.5015          
-2/2 [==============================] - ETA: 0s - loss: 0.7404 - binary_accuracy: 0.5178 - binary_crossentropy: 0.7404 - auc: 0.5316 - precision: 0.9507 - recall: 0.5168          
-2/2 [==============================] - 1s 810ms/step - loss: 0.7404 - binary_accuracy: 0.5178 - binary_crossentropy: 0.7404 - auc: 0.5316 - precision: 0.9507 - recall: 0.5168 - val_loss: 0.7482 - val_binary_accuracy: 0.1143 - val_binary_crossentropy: 0.7482 - val_auc: 0.5052 - val_precision: 0.9395 - val_recall: 0.0564                                    
-(Worker pid=6320) Epoch 3/10                                                                                                                                                      
-1/2 [==============>...............] - ETA: 0s - loss: 0.6966 - binary_accuracy: 0.5522 - binary_crossentropy: 0.6966 - auc: 0.5398 - precision: 0.9503 - recall: 0.5557          
-2/2 [==============================] - ETA: 0s - loss: 0.6839 - binary_accuracy: 0.5706 - binary_crossentropy: 0.6839 - auc: 0.5545 - precision: 0.9509 - recall: 0.5743          
-2/2 [==============================] - 1s 716ms/step - loss: 0.6839 - binary_accuracy: 0.5706 - binary_crossentropy: 0.6839 - auc: 0.5545 - precision: 0.9509 - recall: 0.5743 - val_loss: 0.7437 - val_binary_accuracy: 0.1323 - val_binary_crossentropy: 0.7437 - val_auc: 0.5028 - val_precision: 0.9399 - val_recall: 0.0770                                    
-(Worker pid=6320) Epoch 4/10                                                                                                                                                      
-1/2 [==============>...............] - ETA: 0s - loss: 0.6503 - binary_accuracy: 0.6084 - binary_crossentropy: 0.6503 - auc: 0.5907 - precision: 0.9583 - recall: 0.6138          
-2/2 [==============================] - ETA: 0s - loss: 0.6404 - binary_accuracy: 0.6261 - binary_crossentropy: 0.6404 - auc: 0.6136 - precision: 0.9606 - recall: 0.6312          
-Training time is:  19.877293586730957                                                                                                                                             
-2/2 [==============================] - 1s 701ms/step - loss: 0.6404 - binary_accuracy: 0.6261 - binary_crossentropy: 0.6404 - auc: 0.6136 - precision: 0.9606 - recall: 0.6312 - val_loss: 0.7376 - val_binary_accuracy: 0.1581 - val_binary_crossentropy: 0.7376 - val_auc: 0.5028 - val_precision: 0.9416 - val_recall: 0.1062                                    
-(Worker pid=6320) Epoch 4: early stopping                                                                                                                               
-Stopping orca context  
+(Worker pid=11371) Epoch 4/10                                                                                                                                                      
+1/25 [>.............................] - ETA: 7s - loss: 0.2418 - binary_accuracy: 0.9391 - binary_crossentropy: 0.2418 - auc: 0.5361 - precision: 0.9394 - recall: 0.9997         
+/25 [=>............................] - ETA: 7s - loss: 0.2515 - binary_accuracy: 0.9345 - binary_crossentropy: 0.2515 - auc: 0.5434 - precision: 0.9347 - recall: 0.9998         
+3/25 [==>...........................] - ETA: 7s - loss: 0.2468 - binary_accuracy: 0.9359 - binary_crossentropy: 0.2468 - auc: 0.5570 - precision: 0.9360 - recall: 0.9999         
+4/25 [===>..........................] - ETA: 7s - loss: 0.2474 - binary_accuracy: 0.9359 - binary_crossentropy: 0.2474 - auc: 0.5500 - precision: 0.9360 - recall: 0.9999         
+5/25 [=====>........................] - ETA: 7s - loss: 0.2450 - binary_accuracy: 0.9370 - binary_crossentropy: 0.2450 - auc: 0.5483 - precision: 0.9371 - recall: 0.9999         
+6/25 [======>.......................] - ETA: 6s - loss: 0.2427 - binary_accuracy: 0.9381 - binary_crossentropy: 0.2427 - auc: 0.5478 - precision: 0.9382 - recall: 0.9999         
+7/25 [=======>......................] - ETA: 6s - loss: 0.2412 - binary_accuracy: 0.9385 - binary_crossentropy: 0.2412 - auc: 0.5520 - precision: 0.9386 - recall: 1.0000         
+8/25 [========>.....................] - ETA: 6s - loss: 0.2418 - binary_accuracy: 0.9382 - binary_crossentropy: 0.2418 - auc: 0.5532 - precision: 0.9382 - recall: 1.0000         
+9/25 [=========>....................] - ETA: 5s - loss: 0.2428 - binary_accuracy: 0.9378 - binary_crossentropy: 0.2428 - auc: 0.5503 - precision: 0.9378 - recall: 1.0000        
+10/25 [===========>..................] - ETA: 5s - loss: 0.2443 - binary_accuracy: 0.9371 - binary_crossentropy: 0.2443 - auc: 0.5490 - precision: 0.9372 - recall: 1.0000        
+11/25 [============>.................] - ETA: 5s - loss: 0.2416 - binary_accuracy: 0.9381 - binary_crossentropy: 0.2416 - auc: 0.5525 - precision: 0.9381 - recall: 1.0000        
+12/25 [=============>................] - ETA: 4s - loss: 0.2410 - binary_accuracy: 0.9383 - binary_crossentropy: 0.2410 - auc: 0.5523 - precision: 0.9383 - recall: 1.0000        
+13/25 [==============>...............] - ETA: 4s - loss: 0.2398 - binary_accuracy: 0.9387 - binary_crossentropy: 0.2398 - auc: 0.5552 - precision: 0.9387 - recall: 1.0000        
+14/25 [===============>..............] - ETA: 4s - loss: 0.2393 - binary_accuracy: 0.9387 - binary_crossentropy: 0.2393 - auc: 0.5580 - precision: 0.9387 - recall: 1.0000        
+15/25 [=================>............] - ETA: 3s - loss: 0.2400 - binary_accuracy: 0.9384 - binary_crossentropy: 0.2400 - auc: 0.5574 - precision: 0.9384 - recall: 1.0000        
+16/25 [==================>...........] - ETA: 3s - loss: 0.2397 - binary_accuracy: 0.9385 - binary_crossentropy: 0.2397 - auc: 0.5562 - precision: 0.9385 - recall: 1.0000        
+17/25 [===================>..........] - ETA: 2s - loss: 0.2399 - binary_accuracy: 0.9383 - binary_crossentropy: 0.2399 - auc: 0.5575 - precision: 0.9383 - recall: 1.0000        
+18/25 [====================>.........] - ETA: 2s - loss: 0.2391 - binary_accuracy: 0.9386 - binary_crossentropy: 0.2391 - auc: 0.5583 - precision: 0.9386 - recall: 1.0000        
+19/25 [=====================>........] - ETA: 2s - loss: 0.2386 - binary_accuracy: 0.9386 - binary_crossentropy: 0.2386 - auc: 0.5608 - precision: 0.9386 - recall: 1.0000        
+20/25 [=======================>......] - ETA: 1s - loss: 0.2376 - binary_accuracy: 0.9390 - binary_crossentropy: 0.2376 - auc: 0.5614 - precision: 0.9390 - recall: 1.0000        
+21/25 [========================>.....] - ETA: 1s - loss: 0.2366 - binary_accuracy: 0.9393 - binary_crossentropy: 0.2366 - auc: 0.5621 - precision: 0.9393 - recall: 1.0000        
+22/25 [=========================>....] - ETA: 1s - loss: 0.2367 - binary_accuracy: 0.9391 - binary_crossentropy: 0.2367 - auc: 0.5637 - precision: 0.9392 - recall: 1.0000        
+23/25 [==========================>...] - ETA: 0s - loss: 0.2374 - binary_accuracy: 0.9388 - binary_crossentropy: 0.2374 - auc: 0.5644 - precision: 0.9388 - recall: 1.0000        
+24/25 [===========================>..] - ETA: 0s - loss: 0.2378 - binary_accuracy: 0.9386 - binary_crossentropy: 0.2378 - auc: 0.5636 - precision: 0.9386 - recall: 1.0000        
+25/25 [==============================] - ETA: 0s - loss: 0.2379 - binary_accuracy: 0.9385 - binary_crossentropy: 0.2379 - auc: 0.5635 - precision: 0.9385 - recall: 1.0000        
+Training time is:  53.32298707962036                                                                                                                                              
+25/25 [==============================] - 10s 391ms/step - loss: 0.2379 - binary_accuracy: 0.9385 - binary_crossentropy: 0.2379 - auc: 0.5635 - precision: 0.9385 - recall: 1.0000 - val_loss: 0.6236 - val_binary_accuracy: 0.8491 - val_binary_crossentropy: 0.6236 - val_auc: 0.4988 - val_precision: 0.9342 - val_recall: 0.9021                                 
+(Worker pid=11371) Epoch 4: early stopping                                                                                                                     
+Stopping orca context   
 ```
 `train_2tower.py`:
 ```
-1/1 [==============================] - ETA: 0s - loss: 1.1471 - binary_accuracy: 0.0554 - recall: 0.0000e+00 - auc: 0.5226                                                        
-1/1 [==============================] - 8s 8s/step - loss: 1.1471 - binary_accuracy: 0.0554 - recall: 0.0000e+00 - auc: 0.5226 - val_loss: 0.3244 - val_binary_accuracy: 0.9345 - val_recall: 1.0000 - val_auc: 0.4965  
+1/10 [==>...........................] - ETA: 20s - loss: 1.0403 - binary_accuracy: 0.0595 - recall: 0.0000e+00 - auc: 0.5044                                                      
+2/10 [=====>........................] - ETA: 2s - loss: 0.6878 - binary_accuracy: 0.4959 - recall: 0.4978 - auc: 0.4820                                                           
+3/10 [========>.....................] - ETA: 1s - loss: 0.5449 - binary_accuracy: 0.6443 - recall: 0.6658 - auc: 0.4983                                                           
+4/10 [===========>..................] - ETA: 1s - loss: 0.4690 - binary_accuracy: 0.7173 - recall: 0.7492 - auc: 0.4969                                                           
+5/10 [==============>...............] - ETA: 1s - loss: 0.4203 - binary_accuracy: 0.7620 - recall: 0.7995 - auc: 0.5022                                                           6/10 [=================>............] - ETA: 1s - loss: 0.3891 - binary_accuracy: 0.7914 - recall: 0.8329 - auc: 0.5014                                                           
+7/10 [====================>.........] - ETA: 0s - loss: 0.3665 - binary_accuracy: 0.8124 - recall: 0.8568 - auc: 0.5007                                                           
+8/10 [=======================>......] - ETA: 0s - loss: 0.3495 - binary_accuracy: 0.8282 - recall: 0.8747 - auc: 0.5004                                                           
+9/10 [==========================>...] - ETA: 0s - loss: 0.3370 - binary_accuracy: 0.8403 - recall: 0.8886 - auc: 0.5002                                                          
+10/10 [==============================] - ETA: 0s - loss: 0.3262 - binary_accuracy: 0.8503 - recall: 0.8998 - auc: 0.5002                                                          
+10/10 [==============================] - 7s 487ms/step - loss: 0.3262 - binary_accuracy: 0.8503 - recall: 0.8998 - auc: 0.5002 - val_loss: 0.2405 - val_binary_accuracy: 0.9352 - val_recall: 1.0000 - val_auc: 0.4965                                                                                                                                   
 ==================================================================================================                                                                                
 Total params: 1,368,528                                                                                                                                                           
 Trainable params: 1,368,528                                                                                                                                                       
-Non-trainable params: 0                                                                                                                                                           
+Non-trainable params: 0                                                                                                                                                          
 __________________________________________________________________________________________________                                                                                
 None                                                                                                                                                                              
-saved models                                                                                                                                                                      
-Stopping orca context 
+saved models                                                                                                                                                            
+Stopping orca context  
 ```
 
 ## Summary and Next Steps
