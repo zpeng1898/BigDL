@@ -153,7 +153,6 @@ Use these commands to run the workflow:
 python python/friesian/example/wnd/recsys2021/wnd_preprocess_recsys.py \
     --executor_cores 8 \
     --executor_memory 10g \
-    --train_files 0-1 \
     --input_train_folder apps/wide-deep-recommendation/recsys_data/train \
     --input_test_folder apps/wide-deep-recommendation/recsys_data/test \
     --output_folder apps/wide-deep-recommendation/recsys_data/preprocessed \
